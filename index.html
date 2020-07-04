@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Hello!</title>
-
-    <!-- import the webpage's stylesheet -->
+    <title>Slackventures!</title>
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <style>
+      .game__logo {
+        clip-path: path(
+          "M95.661162608824 5.1515947560834a10 10 0 0 1 8.6776747823512 0l70.607585593062 34.002821116899a10 10 0 0 1 5.4104417306427 6.784479339461l17.438633509222 76.403645518525a10 10 0 0 1 -1.9309642971379 8.4601073581505l-48.861965290359 61.270966494361a10 10 0 0 1 -7.8183148246803 3.7651019814127l-78.368507623849 0a10 10 0 0 1 -7.8183148246803 -3.7651019814127l-48.861965290359 -61.270966494361a10 10 0 0 1 -1.9309642971379 -8.4601073581505l17.438633509222 -76.403645518525a10 10 0 0 1 5.4104417306427 -6.784479339461"
+        );
+      }
+    </style>
   </head>
   <body class="font-mono flex flex-col min-h-screen">
     <header class="bg-gray-900 text-white p-8">
@@ -27,7 +28,7 @@
         A world of adventure awaits inside your chat app!
       </p>
     </header>
-    
+
     <section class="bg-gray-800 text-white p-8">
       <div class="container m-auto">
         <h1 class="text-center text-2xl mb-4">
@@ -39,20 +40,26 @@
               Obsessive DMs
             </h2>
             <p class="text-gray-400 mb-4">
-              Our DMs take their craft very seriously, paying particular attention to:
+              Our DMs take their craft very seriously, paying particular
+              attention to:
             </p>
             <ul class="list-disc text-gray-400">
               <li>World building - cultures, languages and geographies</li>
-              <li>Responsiveness - chances are, if you're online, your DM is too, or will be soon</li>
+              <li>
+                Responsiveness - chances are, if you're online, your DM is too,
+                or will be soon
+              </li>
             </ul>
           </div>
-          
+
           <div class="mb-8">
             <h2 class="font-bold">
               Unique game mechanics
             </h2>
             <p class="text-gray-400 mb-4">
-              Slackventures were born out of RPG-loving friends who lacked the free time to commit to a dedicated questing session each week. The mechanics of Slackventures mean you can:
+              Slackventures were born out of RPG-loving friends who lacked the
+              free time to commit to a dedicated questing session each week. The
+              mechanics of Slackventures mean you can:
             </p>
             <ul class="list-disc text-gray-400">
               <li>Play whenever you like</li>
@@ -61,18 +68,21 @@
               <li>Carve your own destiny - linear story arc optional!</li>
             </ul>
           </div>
-          
+
           <div class="mb-8">
             <h2 class="font-bold">
               Weave a story together
             </h2>
             <p class="text-gray-400 mb-4">
-              It's not just about winning - the journey is important too. Slackventures:
+              It's not just about winning - the journey is important too.
+              Slackventures:
             </p>
             <ul class="list-disc text-gray-400">
               <li>Encourage rich, collaborative storytelling</li>
               <li>Feature published writers as players and DMs</li>
-              <li>Include a free PDF novelisation once the adventure is finished</li>
+              <li>
+                Include a free PDF novelisation once the adventure is finished
+              </li>
             </ul>
           </div>
         </div>
@@ -83,20 +93,27 @@
       <h1 class="text-center text-white text-2xl mb-4">
         The Games
       </h1>
-      <div class="games lg:flex lg:justify-between lg:space-x-16 container m-auto">
+      <div
+        class="games lg:flex lg:justify-between lg:space-x-16 container m-auto"
+      >
         <div class="flex flex-col items-center mb-8">
           <div class="game__logo mb-8">
             <img
               alt="Gunbone"
               src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2FGunbone.jpg?v=1593898096765"
-              style="width: 200px; height: 200px; object-fit: cover; object-position: center center;"
+              style="
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                object-position: center center;
+              "
             />
           </div>
           <p>
-            The small western town of Gunbone sits in the desert in the
-            wild west somewhere or other. It's the olden times and everyone has
-            a gun. Can you find Lucy-Anne, the girl who runs the local hotel?
-            Will you be obstructed or assisted by the rest of the town? What are
+            The small western town of Gunbone sits in the desert in the wild
+            west somewhere or other. It's the olden times and everyone has a
+            gun. Can you find Lucy-Anne, the girl who runs the local hotel? Will
+            you be obstructed or assisted by the rest of the town? What are
             their motives? Hurry. Time is running out
           </p>
         </div>
@@ -106,16 +123,21 @@
             <img
               alt="Sprimshing"
               src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2FSprimshing_Logo.jpg?v=1593890194276"
-              style="width: 200px; height: 200px; object-fit: cover; object-position: center center;"
+              style="
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                object-position: center center;
+              "
             />
           </div>
           <p>
-            Venlings, a peaceful race of small tree-dwelling
-            creatures have lived in the remote safety of the Mystic Wood since
-            the dawn of time. Now they are under threat. Cross continents to
-            find the tribe's new home, fighting foes, finding faiths and
-            learning languages in a strange cruel word of men, elves, wizards
-            and insurance policies.
+            Venlings, a peaceful race of small tree-dwelling creatures have
+            lived in the remote safety of the Mystic Wood since the dawn of
+            time. Now they are under threat. Cross continents to find the
+            tribe's new home, fighting foes, finding faiths and learning
+            languages in a strange cruel word of men, elves, wizards and
+            insurance policies.
           </p>
         </div>
 
@@ -124,15 +146,20 @@
             <img
               alt="Miami Nights"
               src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2Fmn_logo_large.jpg?v=1593818803258"
-              style="width: 200px; height: 200px; object-fit: cover; object-position: center center;"
+              style="
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                object-position: center center;
+              "
             />
           </div>
           <p>
-            A completely original story of detectives in 1980s
-            Miami. Crawl through the sinister but glamourous underworld of
-            revenge, love, and betrayal. Follow the clues to solve the puzzle.
-            Or follow other clues to solve a different puzzle. Or just go
-            rollerskating. The fate of the city is in your hands.
+            A completely original story of detectives in 1980s Miami. Crawl
+            through the sinister but glamourous underworld of revenge, love, and
+            betrayal. Follow the clues to solve the puzzle. Or follow other
+            clues to solve a different puzzle. Or just go rollerskating. The
+            fate of the city is in your hands.
           </p>
         </div>
       </div>
