@@ -13,6 +13,7 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body class="font-mono flex flex-col min-h-screen">
+    
     <header class="bg-gray-900 text-white p-8">
       <h1 class="text-4xl text-center">
         Slackventures
@@ -89,16 +90,12 @@
       </h1>
       <div class="games">
         <div class="game__logo mb-8">
-          <img
-            alt="Sprimshing"
-            src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2FSprimshing_Logo.jpg?v=1593890194276"
-            style="
+          <img alt="Sprimshing" src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2FSprimshing_Logo.jpg?v=1593890194276" style="
                 width: 200px;
                 height: 200px;
                 object-fit: cover;
                 object-position: center center;
-              "
-          />
+              ">
         </div>
         <p>
           Venlings, a peaceful race of small tree-dwelling creatures have lived
@@ -107,24 +104,15 @@
           fighting foes, finding faiths and learning languages in a strange
           cruel word of men, elves, wizards and insurance policies.
         </p>
-        <a
-          href="#join-sprimshing"
-          data-modal-id="join-sprimshing"
-          class="block p-4 rounded bg-green-600 hover:bg-green-700 text-white text-center"
-          >Join the quest!</a
-        >
+        <a href="#join-sprimshing" data-modal-id="join-sprimshing" class="block p-4 rounded bg-green-600 hover:bg-green-700 text-white text-center">Join the quest!</a>
 
         <div class="game__logo mb-8">
-          <img
-            alt="Miami Nights"
-            src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2Fmn_logo_large.jpg?v=1593818803258"
-            style="
+          <img alt="Miami Nights" src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2Fmn_logo_large.jpg?v=1593818803258" style="
                 width: 200px;
                 height: 200px;
                 object-fit: cover;
                 object-position: center center;
-              "
-          />
+              ">
         </div>
         <p class="mb-4">
           A completely original story of detectives in 1980s Miami. Crawl
@@ -133,24 +121,15 @@
           to solve a different puzzle. Or just go rollerskating. The fate of the
           city is in your hands.
         </p>
-        <a
-          href="#join-miami"
-          data-modal-id="join-miami"
-          class="block p-4 rounded bg-pink-600 hover:bg-pink-700 text-white text-center"
-          >Sign up, detective!</a
-        >
+        <a href="#join-miami" data-modal-id="join-miami" class="block p-4 rounded bg-pink-600 hover:bg-pink-700 text-white text-center">Sign up, detective!</a>
 
         <div class="game__logo mb-8">
-          <img
-            alt="Gunbone"
-            src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2FGunbone.jpg?v=1593898096765"
-            style="
+          <img alt="Gunbone" src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2FGunbone.jpg?v=1593898096765" style="
                 width: 200px;
                 height: 200px;
                 object-fit: cover;
                 object-position: center center;
-              "
-          />
+              ">
         </div>
         <p>
           The small western town of Gunbone sits in the desert in the wild west
@@ -160,22 +139,11 @@
           motives? Hurry. Time is running out
         </p>
 
-        <span
-          class="block p-4 rounded bg-orange-400 text-orange-900 cursor-not-allowed text-center"
-          >Sorry, adventure finished</span
-        >
+        <span class="block p-4 rounded bg-orange-400 text-orange-900 cursor-not-allowed text-center">Sorry, adventure finished</span>
       </div>
 
-      <div
-        role="dialog"
-        class="sr-only absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center"
-        id="join-sprimshing"
-      >
-        <form
-          class="w-1/2 p-8 bg-white m-auto rounded"
-          name="join-sprimshing"
-          netlify
-        >
+      <div role="dialog" class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center" id="join-sprimshing">
+        <form class="w-1/2 p-8 bg-white m-auto rounded" name="join-sprimshing" method="post"><input type="hidden" name="form-name" value="join-sprimshing">
           <h2 class="sr-only">
             Join the Sprimshing adventure
           </h2>
@@ -183,35 +151,18 @@
             Enter your email below and hit the button. Our ravens will call
             yours, friend.
           </p>
-          <div class="flex">
-            <label class="flex-grow"
-              ><span class="sr-only">Email</span>
-              <input
-                class="w-full p-2 border"
-                type="email"
-                name="email"
-                placeholder="Email address"
-            /></label>
-            <button
-              class="p-2 rounded rounded-tl-none rounded-bl-none bg-green-600 hover:bg-green-700 text-white text-center"
-              type="submit"
-            >
+          <div class="lg:flex">
+            <label class="flex-grow block mb-2 lg:mb-0"><span class="sr-only">Email</span>
+              <input class="w-full p-2 border" type="email" name="email" placeholder="Email address"></label>
+            <button type="submit" class="w-full p-2 rounded lg:rounded-tl-none lg:rounded-bl-none bg-green-600 hover:bg-green-700 text-white text-center">
               Get questing!
             </button>
           </div>
         </form>
       </div>
       
-      <div
-        role="dialog"
-        class="sr-only absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center"
-        id="join-miami"
-      >
-        <form
-          class="w-1/2 p-8 bg-white m-auto rounded"
-          name="join-miami"
-          netlify
-        >
+      <div role="dialog" class="sr-only absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center" id="join-miami">
+        <form class="w-1/2 p-8 bg-white m-auto rounded" name="join-miami" method="post"><input type="hidden" name="form-name" value="join-miami">
           <h2 class="sr-only">
             Join the Miami Nights adventure
           </h2>
@@ -219,19 +170,10 @@
             Enter your email below and hit the button. We'll be in touch,
             recruit.
           </p>
-          <div class="flex">
-            <label class="flex-grow"
-              ><span class="sr-only">Email</span>
-              <input
-                class="w-full p-2 border"
-                type="email"
-                name="email"
-                placeholder="Email address"
-            /></label>
-            <button
-              class="p-2 rounded rounded-tl-none rounded-bl-none bg-pink-600 hover:bg-pink-700 text-white text-center"
-              type="submit"
-            >
+          <div class="lg:flex">
+            <label class="flex-grow block mb-2 lg:mb-0"><span class="sr-only">Email</span>
+              <input class="w-full p-2 border" type="email" name="email" placeholder="Email address"></label>
+            <button class="p-2 rounded rounded-tl-none rounded-bl-none bg-pink-600 hover:bg-pink-700 text-white text-center" type="submit">
               Join the action!
             </button>
           </div>
@@ -239,13 +181,13 @@
       </div>
     </section>
 
-    <div aria-hidden id="phone">
+    <div aria-hidden="" id="phone">
       <div id="messages"></div>
       <ul id="menu"></ul>
-      <input id="input" type="text" />
+      <input id="input" type="text">
       <div id="inventory" class="hidden">
         <button id="inventory-close">
-          &times;
+          ×
         </button>
         <h1>
           Inventory for Milric
