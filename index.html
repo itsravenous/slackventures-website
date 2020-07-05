@@ -10,13 +10,7 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <style>
-      .game__logo {
-        clip-path: path(
-          "M95.661162608824 5.1515947560834a10 10 0 0 1 8.6776747823512 0l70.607585593062 34.002821116899a10 10 0 0 1 5.4104417306427 6.784479339461l17.438633509222 76.403645518525a10 10 0 0 1 -1.9309642971379 8.4601073581505l-48.861965290359 61.270966494361a10 10 0 0 1 -7.8183148246803 3.7651019814127l-78.368507623849 0a10 10 0 0 1 -7.8183148246803 -3.7651019814127l-48.861965290359 -61.270966494361a10 10 0 0 1 -1.9309642971379 -8.4601073581505l17.438633509222 -76.403645518525a10 10 0 0 1 5.4104417306427 -6.784479339461"
-        );
-      }
-    </style>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body class="font-mono flex flex-col min-h-screen">
     <header class="bg-gray-900 text-white p-8">
@@ -93,75 +87,155 @@
       <h1 class="text-center text-white text-2xl mb-4">
         The Games
       </h1>
+      <div class="games">
+        <div class="game__logo mb-8">
+          <img
+            alt="Sprimshing"
+            src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2FSprimshing_Logo.jpg?v=1593890194276"
+            style="
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                object-position: center center;
+              "
+          />
+        </div>
+        <p>
+          Venlings, a peaceful race of small tree-dwelling creatures have lived
+          in the remote safety of the Mystic Wood since the dawn of time. Now
+          they are under threat. Cross continents to find the tribe's new home,
+          fighting foes, finding faiths and learning languages in a strange
+          cruel word of men, elves, wizards and insurance policies.
+        </p>
+        <a
+          href="#join-sprimshing"
+          data-modal-id="join-sprimshing"
+          class="block p-4 rounded bg-green-600 hover:bg-green-700 text-white text-center"
+          >Join the quest!</a
+        >
+
+        <div class="game__logo mb-8">
+          <img
+            alt="Miami Nights"
+            src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2Fmn_logo_large.jpg?v=1593818803258"
+            style="
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                object-position: center center;
+              "
+          />
+        </div>
+        <p class="mb-4">
+          A completely original story of detectives in 1980s Miami. Crawl
+          through the sinister but glamourous underworld of revenge, love, and
+          betrayal. Follow the clues to solve the puzzle. Or follow other clues
+          to solve a different puzzle. Or just go rollerskating. The fate of the
+          city is in your hands.
+        </p>
+        <a
+          href="#join-miami"
+          data-modal-id="join-miami"
+          class="block p-4 rounded bg-pink-600 hover:bg-pink-700 text-white text-center"
+          >Sign up, detective!</a
+        >
+
+        <div class="game__logo mb-8">
+          <img
+            alt="Gunbone"
+            src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2FGunbone.jpg?v=1593898096765"
+            style="
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                object-position: center center;
+              "
+          />
+        </div>
+        <p>
+          The small western town of Gunbone sits in the desert in the wild west
+          somewhere or other. It's the olden times and everyone has a gun. Can
+          you find Lucy-Anne, the girl who runs the local hotel? Will you be
+          obstructed or assisted by the rest of the town? What are their
+          motives? Hurry. Time is running out
+        </p>
+
+        <span
+          class="block p-4 rounded bg-orange-400 text-orange-900 cursor-not-allowed text-center"
+          >Sorry, adventure finished</span
+        >
+      </div>
+
       <div
-        class="games lg:flex lg:justify-between lg:space-x-16 container m-auto"
+        role="dialog"
+        class="sr-only absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center"
+        id="join-sprimshing"
       >
-        <div class="flex flex-col items-center mb-8">
-          <div class="game__logo mb-8">
-            <img
-              alt="Gunbone"
-              src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2FGunbone.jpg?v=1593898096765"
-              style="
-                width: 200px;
-                height: 200px;
-                object-fit: cover;
-                object-position: center center;
-              "
-            />
-          </div>
-          <p>
-            The small western town of Gunbone sits in the desert in the wild
-            west somewhere or other. It's the olden times and everyone has a
-            gun. Can you find Lucy-Anne, the girl who runs the local hotel? Will
-            you be obstructed or assisted by the rest of the town? What are
-            their motives? Hurry. Time is running out
+        <form
+          class="w-1/2 p-8 bg-white m-auto rounded"
+          name="join-sprimshing"
+          netlify
+        >
+          <h2 class="sr-only">
+            Join the Sprimshing adventure
+          </h2>
+          <p class="mb-4">
+            Enter your email below and hit the button. Our ravens will call
+            yours, friend.
           </p>
-        </div>
-
-        <div class="flex flex-col items-center mb-8">
-          <div class="game__logo mb-8">
-            <img
-              alt="Sprimshing"
-              src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2FSprimshing_Logo.jpg?v=1593890194276"
-              style="
-                width: 200px;
-                height: 200px;
-                object-fit: cover;
-                object-position: center center;
-              "
-            />
+          <div class="flex">
+            <label class="flex-grow"
+              ><span class="sr-only">Email</span>
+              <input
+                class="w-full p-2 border"
+                type="email"
+                name="email"
+                placeholder="Email address"
+            /></label>
+            <button
+              class="p-2 rounded rounded-tl-none rounded-bl-none bg-green-600 hover:bg-green-700 text-white text-center"
+              type="submit"
+            >
+              Get questing!
+            </button>
           </div>
-          <p>
-            Venlings, a peaceful race of small tree-dwelling creatures have
-            lived in the remote safety of the Mystic Wood since the dawn of
-            time. Now they are under threat. Cross continents to find the
-            tribe's new home, fighting foes, finding faiths and learning
-            languages in a strange cruel word of men, elves, wizards and
-            insurance policies.
+        </form>
+      </div>
+      
+      <div
+        role="dialog"
+        class="sr-only absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center"
+        id="join-miami"
+      >
+        <form
+          class="w-1/2 p-8 bg-white m-auto rounded"
+          name="join-miami"
+          netlify
+        >
+          <h2 class="sr-only">
+            Join the Miami Nights adventure
+          </h2>
+          <p class="mb-4">
+            Enter your email below and hit the button. We'll be in touch,
+            recruit.
           </p>
-        </div>
-
-        <div class="flex flex-col items-center mb-8">
-          <div class="game__logo mb-8">
-            <img
-              alt="Miami Nights"
-              src="https://cdn.glitch.com/9b890ffa-0cba-4d5f-af83-8d4f3a4f4169%2Fmn_logo_large.jpg?v=1593818803258"
-              style="
-                width: 200px;
-                height: 200px;
-                object-fit: cover;
-                object-position: center center;
-              "
-            />
+          <div class="flex">
+            <label class="flex-grow"
+              ><span class="sr-only">Email</span>
+              <input
+                class="w-full p-2 border"
+                type="email"
+                name="email"
+                placeholder="Email address"
+            /></label>
+            <button
+              class="p-2 rounded rounded-tl-none rounded-bl-none bg-pink-600 hover:bg-pink-700 text-white text-center"
+              type="submit"
+            >
+              Join the action!
+            </button>
           </div>
-          <p>
-            A completely original story of detectives in 1980s Miami. Crawl
-            through the sinister but glamourous underworld of revenge, love, and
-            betrayal. Follow the clues to solve the puzzle. Or follow other
-            clues to solve a different puzzle. Or just go rollerskating. The
-            fate of the city is in your hands.
-          </p>
-        </div>
+        </form>
       </div>
     </section>
 
@@ -197,5 +271,7 @@
         </ul>
       </div>
     </div>
+
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
